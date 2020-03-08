@@ -1,12 +1,12 @@
-function sumRange(numArr) {
+const sumRange = numArr => {
     if (numArr[0] > numArr[1]) {
-        let high = numArr[0];
+        const high = numArr[0];
         numArr[0] = numArr[1];
         numArr[1] = high;
     }
-    var high = numArr[1];
-    var index = numArr[0];
-    var sum = 0;
+    const high = numArr[1];
+    let index = numArr[0];
+    let sum = 0;
     if (index === high) {
         sum = index + high;
         return sum;
@@ -31,3 +31,5 @@ console.log(sumRange([-3, 0]))
 console.log(sumRange([3, -2]))
 console.log(sumRange([-2, -3]))
 console.log(sumRange([-3, -3]))
+
+module.exports = sumRange;

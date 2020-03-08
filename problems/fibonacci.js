@@ -24,9 +24,13 @@ const fibonacci = () => {
     }
     console.log(fibonacciEvenArray)
     console.log(evenSum)
+
+    return evenSum;
 }
 
 fibonacci();
+
+module.exports = fibonacci;
 
 const myArray = [[[3, 2]]];
 console.log(myArray[0][0][1]);

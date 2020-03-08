@@ -1,5 +1,5 @@
-function reverseString(strToReverse) {
-    var newStr = "";
+const reverseString = strToReverse => {
+    let newStr = "";
     if (strToReverse.length === 0) {
         return;
     }
@@ -18,3 +18,5 @@ console.log(reverseString(""));
 console.log(reverseString("A"));
 console.log(reverseString("TEST"));
 console.log(reverseString("TEsTiNg"));
+
+module.exports = reverseString;

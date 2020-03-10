@@ -11,8 +11,10 @@ My goal is to challenge myself to be able to think logically as a programmer, an
 Write a function to find the longest common prefix string amongst an array of strings.
 If there is no common prefix, return an empty string "".
 
+
 &nbsp;
 Write a function that takes in an array of two strings. The function returns true if the string in the first element of the array contains all of the letters of the string in the second element of the array.
+
 
 &nbsp;
 Write a function that performs a search and replace on the sentence using the arguments provided and return the new sentence.

@@ -1,8 +1,8 @@
-function mutation(strArr) {
-    var counter = 0;
-    var firstString = "";
-    var secondString = "";
-    var newStrArr = [];
+const mutation = strArr => {
+    let counter = 0;
+    let firstString = "";
+    let secondString = "";
+    const newStrArr = [];
 
     for (l = 0; l < strArr.length; l++) {
         newStrArr.push(strArr[l].toLowerCase())
@@ -41,3 +41,5 @@ function mutation(strArr) {
 console.log(mutation(["hello", "hey"])); // false
 console.log(mutation(["hello", "Hello"])); // true
 console.log(mutation(["Alien", "line"])); // true
+
+module.exports = mutation;

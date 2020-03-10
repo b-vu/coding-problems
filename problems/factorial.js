@@ -1,5 +1,5 @@
-function factorialize(num) {
-    var product = 1;
+const factorialize = num => {
+    let product = 1;
     for (i = 1; i <= num; i++) {
         product *= i;
     }
@@ -7,7 +7,7 @@ function factorialize(num) {
 };
 
 //Recursive solution
-var product = function (num) {
+const product = num => {
     if (num <= 0) {
         return 1;
     }
@@ -17,7 +17,7 @@ var product = function (num) {
 };
 
 //Another recursive solution
-var product2 = function (num) {
+const product2 = num => {
     if (num > 0) {
         return num * (product2(num - 1));
     }
@@ -37,3 +37,5 @@ console.log(product(8));
 console.log(product2(5));
 console.log(product2(3));
 console.log(product2(8));
+
+module.exports = factorialize;

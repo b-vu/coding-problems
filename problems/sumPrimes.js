@@ -2,11 +2,11 @@
 // * @param {number} num 
 // * @returns {number}
 
-function sumPrimes(num) {
-    var primes = [];
+const sumPrimes = num => {
+    const primes = [];
 
     for (counter = 2; counter <= num; counter++) {
-        var isPrime = true;
+        let isPrime = true;
         for (divisor = 2; divisor < counter; divisor++) {
             if (Number.isInteger(counter / divisor)) {
                 isPrime = false;
@@ -19,7 +19,7 @@ function sumPrimes(num) {
     }
 
     console.log(primes);
-    let sum = primes.reduce((a, b) => a + b, 0);
+    const sum = primes.reduce((a, b) => a + b, 0);
     return sum;
 }
 
@@ -29,3 +29,5 @@ console.log(sumPrimes(3)) //2 + 3 = 5
 console.log(sumPrimes(7))
 console.log(sumPrimes(10)) //2 + 3 + 5 + 7 = 17
 console.log(sumPrimes(977)) //73156
+
+module.exports = sumPrimes;

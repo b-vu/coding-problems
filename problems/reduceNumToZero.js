@@ -20,7 +20,7 @@ const reduce = num => {
             counter++;
         }
         else {
-            num = num / 2;
+            num /= 2;
             counter++;
         }
     }
